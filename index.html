@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player 🎧</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <nav class="sidebar">
+            <div class="logo">
+                <img src="/favicon.ico" alt="Spotify">
+            </div>
+            <ul class="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Search</a></li>
+                <li><a href="#">Your Library</a></li>
+            </ul>
+            <ul class="playlist-links">
+                <li><a href="#" id="create-playlist-btn">Create Playlist</a></li>
+                <li><a href="#">Liked Songs</a></li>
+            </ul>
+            <div class="playlist">
+                <p>PLAYLISTS</p>
+                <ul id="playlist-list">
+                    <li><a href="#">Daily Mix 1</a></li>
+                    <li><a href="#">Discover Weekly</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <main class="content">
+            <header class="header">
+                <div class="search-bar">
+                    <input type="text" placeholder="Search..." id="search-input">
+                    <img src="/search.svg" alt="Search" id="search-icon">
+                </div>
+            </header>
+
+            <section class="categories">
+                <h2>Good evening</h2>
+                <div class="category-grid"></div>
+            </section>
+        </main>
+
+        <footer class="music-player">
+            <div class="current-song">
+                <div>
+                    <p>Song Name</p>
+                    <p>Artist Name</p>
+                </div>
+            </div>
+            <div class="player-controls">
+                <button id="prev"><img src="/prevsong.svg" alt=""></button>
+                <button id="play-pause"><img src="/play.svg" alt=""></button>
+                <button id="next"><img src="/nextsong.svg" alt=""></button>
+            </div>
+            <div class="seek-bar-container">
+                <input type="range" id="seek-bar" value="0" min="0" max="100">
+            </div>
+            <div class="volume-control">
+                <button id="mute"><img src="/volume.svg" alt="Mute"></button>
+                <input type="range" id="volume-slider" min="0" max="100" value="50">
+            </div>
+        </footer>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
+
