@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', function() {
         { title: "Expresso", artist: "Sabrina Carpenter", filePath: "songs/song4.mp3" },
     ];
 
-    const playlists = {}; // Store playlists
+    const playlists = {};
     const categoryGrid = document.querySelector('.category-grid');
     const playlistList = document.getElementById('playlist-list');
     const createPlaylistBtn = document.getElementById('create-playlist-btn');
